@@ -1,10 +1,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.stevenosse.flutter_kit">
+    package="app.akabnam.com">
 
     <uses-permission android:name="android.permission.INTERNET"/>
 
    <application
-        android:label="flutter_boilerplate"
+        android:label="Akabnam"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

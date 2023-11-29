@@ -13,10 +13,29 @@ void main() {
 
       await appInitializer.preAppRun();
 
-      runApp(Application());
+      runApp(_Unfocus(child: Application()));
 
       appInitializer.postAppRun();
     },
     (error, stack) {},
   );
+}
+
+class _Unfocus extends StatelessWidget {
+  const _Unfocus({
+    required this.child,
+  });
+
+  final Widget child;
+
+  @override
+  Widget build(BuildContext context) {
+    return GestureDetector(
+      behavior: HitTestBehavior.opaque,
+      onTap: () {
+        FocusManager.instance.primaryFocus?.unfocus();
+      },
+      child: child,
+    );
+  }
 }

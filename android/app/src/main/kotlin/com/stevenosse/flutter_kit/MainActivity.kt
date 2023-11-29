@@ -1,4 +1,4 @@
-package com.stevenosse.flutter_kit
+package app.akabnam.com
 
 import io.flutter.embedding.android.FlutterActivity
 
